@@ -1,0 +1,22 @@
+@media screen and (max-width:940px){
+    .main::before{
+        background: #000
+        /* display: none; */
+    }
+    
+    header{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 20vh;
+    }
+    header span{
+        align-self: center;
+        margin-left: 0px;
+    }
+
+    header ul{
+        margin-right: 0px;
+    }
+
+}

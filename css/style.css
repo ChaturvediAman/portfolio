@@ -1,0 +1,127 @@
+.main{
+    display: flex;
+    flex: 0px 0px 80%;
+    flex-direction: column;
+}
+.main::before{
+    content: "";
+    background: linear-gradient(rgb(0, 4, 40), rgb(0, 78, 146));
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    /* z-index: -1; */
+}
+/* Navigation */
+header{
+    height: 5vw;
+    color: black;
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+}
+/* Logo */
+header span{
+    margin-left: 130px;
+    font-size: var(--f-h-1);
+    font-family: var(--font2);
+    font-weight: bolder;
+}
+
+/* Targetting whole list */
+header ul{
+    display: flex;
+    list-style: none;
+    margin-right:100px;
+    padding: 10px;
+    font-family: var(--font1);
+    font-size: 1.3vw;
+}
+
+/* Targetting list items */
+header ul li{
+    margin: 20px;
+}
+
+/* Targetting particular links */
+header ul li a{
+    /* display: flex; */
+    text-decoration: none;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 5px;
+    border-radius: 10px;
+}
+header ul li a:hover{
+    cursor: pointer;
+    color: black;
+    background-color: rgb(233, 208, 208);
+    text-transform: capitalize;
+}
+
+/* Container */
+.container{
+    /* background-color: #7395AE; */
+    /* background-color: salmon; */
+    /* border-radius: 20px; */
+    height: 25vh;
+    /* border: 2px solid black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    font-size: 1.3vw;
+    
+    font-family: var(--font2);
+    /* letter-spacing: 1.5px;; */
+    
+}
+
+.quote_bubble{
+    padding: 20px;
+    backdrop-filter: blur(0px);
+    border: 3px solid ;
+    
+    border-image: 
+    linear-gradient(
+        to bottom, 
+      red, 
+      rgba(0, 0, 0, 0)
+    ) 1 100%;
+}
+#quote{
+    
+    font-family: var(--font3);
+    
+}
+
+.content{
+/* background-color: blue; */
+height: 30vw;
+display: flex;
+flex-wrap: wrap;
+align-items: center;
+justify-content: center;
+}
+
+.box{
+
+background-color: brown;
+
+border: 2px solid black;
+border-radius: 50px;
+height: 100px;
+
+width: 100px;
+margin: 30px;
+
+height: 25vw;
+width: 25vw;
+}
+
+
+/* Footer */
+footer{
+    background-color:slateblue;
+    height: 1vw;
+}
