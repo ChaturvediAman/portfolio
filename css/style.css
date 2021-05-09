@@ -1,25 +1,28 @@
 .main{
     display: flex;
-    flex: 0px 0px 80%;
     flex-direction: column;
+    /* flex: 0px 0px 50%; */
 }
+
 .main::before{
     content: "";
     background: linear-gradient(rgb(0, 4, 40), rgb(0, 78, 146));
     position: absolute;
     height: 100%;
     width: 100%;
-    /* z-index: -1; */
+    z-index: -1;
 }
+
 /* Navigation */
 header{
     height: 5vw;
-    color: black;
+    /* color: black; */
     display: flex;
-
+    
     justify-content: space-between;
     align-items: center;
 }
+
 /* Logo */
 header span{
     margin-left: 130px;
@@ -35,7 +38,7 @@ header ul{
     margin-right:100px;
     padding: 10px;
     font-family: var(--font1);
-    font-size: 1.3vw;
+    font-size: 1vw;
 }
 
 /* Targetting list items */
@@ -52,6 +55,7 @@ header ul li a{
     padding-bottom: 5px;
     border-radius: 10px;
 }
+
 header ul li a:hover{
     cursor: pointer;
     color: black;
@@ -59,22 +63,30 @@ header ul li a:hover{
     text-transform: capitalize;
 }
 
+.hr{
+    /* display: flex; */
+    width: 83%;
+    margin: auto;
+    opacity: 0.3;
+}
 /* Container */
 .container{
     /* background-color: #7395AE; */
     /* background-color: salmon; */
     /* border-radius: 20px; */
-    height: 25vh;
+    height: 70vh;
     /* border: 2px solid black; */
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    font-size: 1.3vw;
+    font-size: 1.8vw;
     
     font-family: var(--font2);
     /* letter-spacing: 1.5px;; */
-    
+    text-align: center;   
+    width: 80%;
+    margin: auto;
 }
 
 .quote_bubble{
@@ -88,40 +100,4 @@ header ul li a:hover{
       red, 
       rgba(0, 0, 0, 0)
     ) 1 100%;
-}
-#quote{
-    
-    font-family: var(--font3);
-    
-}
-
-.content{
-/* background-color: blue; */
-height: 30vw;
-display: flex;
-flex-wrap: wrap;
-align-items: center;
-justify-content: center;
-}
-
-.box{
-
-background-color: brown;
-
-border: 2px solid black;
-border-radius: 50px;
-height: 100px;
-
-width: 100px;
-margin: 30px;
-
-height: 25vw;
-width: 25vw;
-}
-
-
-/* Footer */
-footer{
-    background-color:slateblue;
-    height: 1vw;
 }
