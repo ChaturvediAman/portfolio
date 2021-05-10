@@ -3,7 +3,6 @@
     flex-direction: column;
     /* flex: 0px 0px 50%; */
 }
-
 .main::before{
     content: "";
     background: linear-gradient(rgb(0, 4, 40), rgb(0, 78, 146));
@@ -12,17 +11,14 @@
     width: 100%;
     z-index: -1;
 }
-
 /* Navigation */
 header{
     height: 5vw;
     /* color: black; */
-    display: flex;
-    
+    display: flex;    
     justify-content: space-between;
     align-items: center;
 }
-
 /* Logo */
 header span{
     margin-left: 130px;
@@ -30,7 +26,6 @@ header span{
     font-family: var(--font2);
     font-weight: bolder;
 }
-
 /* Targetting whole list */
 header ul{
     display: flex;
@@ -40,12 +35,10 @@ header ul{
     font-family: var(--font1);
     font-size: 1vw;
 }
-
 /* Targetting list items */
 header ul li{
     margin: 20px;
 }
-
 /* Targetting particular links */
 header ul li a{
     /* display: flex; */
@@ -55,14 +48,12 @@ header ul li a{
     padding-bottom: 5px;
     border-radius: 10px;
 }
-
 header ul li a:hover{
     cursor: pointer;
     color: black;
     background-color: rgb(233, 208, 208);
     text-transform: capitalize;
 }
-
 .hr{
     /* display: flex; */
     width: 83%;
@@ -74,26 +65,23 @@ header ul li a:hover{
     /* background-color: #7395AE; */
     /* background-color: salmon; */
     /* border-radius: 20px; */
-    height: 70vh;
+    height: 90vh;
     /* border: 2px solid black; */
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    font-size: 1.8vw;
-    
+    font-size: 1.8vw;   
     font-family: var(--font2);
     /* letter-spacing: 1.5px;; */
     text-align: center;   
     width: 80%;
     margin: auto;
 }
-
 .quote_bubble{
     padding: 20px;
     backdrop-filter: blur(0px);
-    border: 3px solid ;
-    
+    border: 3px solid ;    
     border-image: 
     linear-gradient(
         to bottom, 
@@ -101,13 +89,9 @@ header ul li a:hover{
       rgba(0, 0, 0, 0)
     ) 1 100%;
 }
-
-#quote{
-    
-    font-family: var(--font3);
-    
+#quote{    
+    font-family: var(--font3);   
 }
-
 .content{
     /* background-color: blue; */
     /* height: 30vw; */
@@ -117,18 +101,13 @@ header ul li a:hover{
     /* align-items: center; */
     /* justify-content: center; */
     }
-
     .box{
-        /* background-color: brown; */
-        
-        /* border: 2px solid black; */
+        /* background-color: brown; */        
+        border: 2px solid black;
         /* border-radius: 50px; */
-        /* height: 100px; */
-        
+        /* height: 100px; */        
         width: 100%;
-        /* margin: 30px; */
-        
-        /* height: 25vw; */
+        /* margin: 30px; */        
+        height: 25vw;
         /* width: 25vw; */
         }
-        
