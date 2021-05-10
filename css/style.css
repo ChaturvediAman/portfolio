@@ -65,7 +65,7 @@ header ul li a:hover{
     /* background-color: #7395AE; */
     /* background-color: salmon; */
     /* border-radius: 20px; */
-    height: 90vh;
+    height: 89vh;
     /* border: 2px solid black; */
     display: flex;
     justify-content: center;
@@ -87,11 +87,11 @@ header ul li a:hover{
         to bottom, 
       red, 
       rgba(0, 0, 0, 0)
-    ) 1 100%;
-}
-#quote{    
-    font-family: var(--font3);   
-}
+      ) 1 100%;
+    }
+    #quote{    
+        font-family: var(--font3);   
+    }
 .content{
     /* background-color: blue; */
     /* height: 30vw; */
@@ -100,14 +100,26 @@ header ul li a:hover{
     flex-wrap: wrap;
     /* align-items: center; */
     /* justify-content: center; */
-    }
-    .box{
-        /* background-color: brown; */        
-        border: 2px solid black;
-        /* border-radius: 50px; */
-        /* height: 100px; */        
-        width: 100%;
-        /* margin: 30px; */        
-        height: 25vw;
-        /* width: 25vw; */
-        }
+}
+.box{
+    /* background-color: brown; */        
+    border: 2px solid black;
+    /* border-radius: 50px; */
+    /* height: 100px; */        
+    width: 100%;
+    /* margin: 30px; */        
+    height: 25vw;
+    /* width: 25vw; */
+}
+#project_section::before{
+    content: "";
+    background: linear-gradient( rgb(0, 78, 146),rgb(0, 4, 40));
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+.innerBox{
+    width: 200px;
+    border: 2px solid black;
+}    
