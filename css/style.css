@@ -120,6 +120,10 @@ header ul li a:hover{
     z-index: -1;
 }
 .innerBox{
+    /* width: 200px; */
+    /* border: 2px solid black; */
+}    
+.innerBox img{
     width: 200px;
-    border: 2px solid black;
+    /* border: 2px solid black; */
 }    
