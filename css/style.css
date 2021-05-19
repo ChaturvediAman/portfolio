@@ -1,65 +1,38 @@
-.main{
-    display: flex;
-    flex-direction: column;
-    /* flex: 0px 0px 50%; */
-}
-.main::before{
-    content: "";
-    background: linear-gradient(rgb(0, 4, 40), rgb(0, 78, 146));
-    position: absolute;
-    height: 100%;
+.curtain_body{
     width: 100%;
-    z-index: -1;
+    height: 100%;
+    overflow: hidden;
 }
-/* Navigation */
-header{
-    height: 5vw;
-    /* color: black; */
-    display: flex;    
-    justify-content: space-between;
-    align-items: center;
+.curtain{
+    /* background-color: #cfcfcf; */
+    /* background-color: #f6feff; */
+    background:url("/img/wood.jpg");
+    background-repeat: no-repeat;
+    
+    background-size: cover;
+    opacity: 0.9;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    z-index: 1;
+    transition: all  5s ease-out;
 }
-/* Logo */
-header span{
-    margin-left: 130px;
-    font-size: var(--f-h-1);
-    font-family: var(--font2);
-    font-weight: bolder;
+.content{
+    position: absolute;
+    top: 0%;
+    width: 100%;
 }
-/* Targetting whole list */
-header ul{
-    display: flex;
-    list-style: none;
-    margin-right:100px;
-    padding: 10px;
-    font-family: var(--font1);
-    font-size: 1vw;
+.btn{
+    position: absolute;
+    top: 49vh;
+    right: 50%;
+    z-index: 100;
 }
-/* Targetting list items */
-header ul li{
-    margin: 20px;
-}
-/* Targetting particular links */
-header ul li a{
-    /* display: flex; */
-    text-decoration: none;
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-bottom: 5px;
-    border-radius: 10px;
-}
-header ul li a:hover{
-    cursor: pointer;
-    color: black;
-    background-color: rgb(233, 208, 208);
-    text-transform: capitalize;
-}
-.hr{
-    /* display: flex; */
-    width: 83%;
-    margin: auto;
-    opacity: 0.3;
-}
+
+
+
+
+/* Text Over Curtain */
 /* Container */
 .container{
     /* background-color: #7395AE; */
@@ -71,59 +44,89 @@ header ul li a:hover{
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    font-size: 1.8vw;   
+    font-size: 4.8vw;   
     font-family: var(--font2);
+    font-weight: 700;
     /* letter-spacing: 1.5px;; */
     text-align: center;   
-    width: 80%;
+    width: 65%;
     margin: auto;
 }
 .quote_bubble{
     padding: 20px;
     backdrop-filter: blur(0px);
     border: 3px solid ;    
-    border-image: 
+    /* border-image: 
     linear-gradient(
         to bottom, 
-      red, 
-      rgba(0, 0, 0, 0)
-      ) 1 100%;
-    }
+        red, 
+        rgba(0, 0, 0, 0)
+        ) 1 100%;
+    } */}
     #quote{    
-        font-family: var(--font3);   
+        font-family: var(--font4);   
     }
-.content{
-    /* background-color: blue; */
-    /* height: 30vw; */
-    display: flex;
-    /* flex-direction: row; */
-    flex-wrap: wrap;
-    /* align-items: center; */
-    /* justify-content: center; */
-}
-.box{
-    /* background-color: brown; */        
-    border: 2px solid black;
-    /* border-radius: 50px; */
-    /* height: 100px; */        
-    width: 100%;
-    /* margin: 30px; */        
-    height: 25vw;
-    /* width: 25vw; */
-}
-#project_section::before{
-    content: "";
-    background: linear-gradient( rgb(0, 78, 146),rgb(0, 4, 40));
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    z-index: -1;
-}
-.innerBox{
-    /* width: 200px; */
-    /* border: 2px solid black; */
-}    
-.innerBox img{
-    width: 200px;
-    /* border: 2px solid black; */
-}    
+    
+    
+    
+    
+    .main{
+        color: azure;
+        display: flex;
+        flex-direction: column;
+        /* flex: 0px 0px 50%; */
+    }
+    .main::before{
+        content: "";
+        background: linear-gradient(rgb(0, 4, 40), rgb(0, 78, 146));
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        z-index: -1;
+    }
+    /* Navigation */
+    header{
+        height: 5vw;
+        /* color: black; */
+        /* width: 100%; */
+        display: flex;    
+        justify-content: space-between;
+        align-items: center;
+    }
+    /* Logo */
+    header span{
+        margin-left: 130px;
+        font-size: var(--f-h-1);
+        font-family: var(--font2);
+        font-weight: bolder;
+    }
+    /* Targetting whole list */
+    header ul{
+        display: flex;
+        list-style: none;
+        margin-right:100px;
+        padding: 10px;
+        font-family: var(--font1);
+        font-size: 1vw;
+    }
+    /* Targetting list items */
+    header ul li{
+        margin: 20px;
+    }
+    /* Targetting particular links */
+    header ul li a{
+        color: azure;
+        /* display: flex; */
+        text-decoration: none;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-bottom: 5px;
+        border-radius: 10px;
+    }
+    header ul li a:hover{
+        cursor: pointer;
+        color: black;
+        background-color: rgb(233, 208, 208);
+        text-transform: capitalize;
+    }
+    

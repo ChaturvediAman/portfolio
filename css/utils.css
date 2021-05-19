@@ -1,20 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital@0;1&family=Ubuntu&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Delius+Swash+Caps&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pattaya&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Qwigley&display=swap');
+
 :root{
     --font1:'Playfair Display', serif;
     --font2:'Ubuntu', sans-serif;
     --font3:'Delius Swash Caps', cursive;
+    --font4:'Qwigley', cursive;
     --f-h-1:1.5vw;
     --f-h-2:1.3vw;
+    --f-color:azure;
 }
 *{
     margin: 0px;
     padding: 0px;
-    color: azure;
+    /* color: azure; */
 
 }
-.arrow {
+/* .arrow {
     border: solid black;
     border-width: 0 3px 3px 0;
     display: inline-block;
@@ -23,7 +28,7 @@
 .down {
     transform: rotate(45deg);
     -webkit-transform: rotate(45deg);
-}
+} */
 .t-a-l{
     text-align: left;
 }
